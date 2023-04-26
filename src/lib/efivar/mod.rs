@@ -2,6 +2,8 @@ pub mod efi_guids;
 pub mod efivar_display;
 pub mod types;
 
+include!(concat!(env!("OUT_DIR"), "/config_dirs.rs"));
+
 pub mod efi_variable_attributes {
     use crate::types::EfiVariableAttribute;
 
